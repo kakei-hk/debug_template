@@ -1,4 +1,4 @@
-# Debug Tenmplate
+# Debug Template
 
 ## Overview
 
