@@ -4,9 +4,6 @@
 
 # tmux
 # TODO: add install commands without super user
-settings_json="${HOME}/.vscode-server/data/Machine/settings.json"
-touch $settings_json
-echo -e "{\n    \"terminal.integrated.defaultProfile.linux\": \"tmux\"\n}" >> $settings_json
 
 # atuin
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
