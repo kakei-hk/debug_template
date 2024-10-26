@@ -47,9 +47,11 @@
 				"yzhang.markdown-all-in-one",
 				"yzane.markdown-pdf",
 				"shd101wyy.markdown-preview-enhanced",
-				"hediet.vscode-drawio",
-				"bierner.markdown-mermaid",
 				"davidanson.vscode-markdownlint",
+				// drawio
+				"hediet.vscode-drawio",
+				// mermaid
+				"bierner.markdown-mermaid",
 				// csv
 				"mechatroner.rainbow-csv",
 				"janisdd.vscode-edit-csv",
