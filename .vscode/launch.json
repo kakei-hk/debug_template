@@ -8,6 +8,14 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true
+        },
+        {
+            "name": "Python: run example script",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "pydebug_template/example/example.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
         }
     ]
 }
