@@ -18,7 +18,6 @@
 			},
 			"extensions": [
 				// common
-				"coenraads.bracket-pair-colorizer-2",
 				"oderwat.indent-rainbow",
 				"shardulm94.trailing-spaces",
 				"christian-kohler.path-intellisense",
