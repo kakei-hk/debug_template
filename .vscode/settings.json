@@ -1,0 +1,32 @@
+{
+	// Python
+	"[python]": {
+		"editor.formatOnSave": true,
+		"editor.rulers": [
+			88
+		],
+		"editor.defaultFormatter": "charliermarsh.ruff",
+		"editor.codeActionsOnSave": {
+			// "source.fixAll.ruff": "explicit",
+			"source.fixAll": "explicit",
+			"source.organizeImports.ruff": "explicit"
+		}
+	},
+	"python.defaultInterpreterPath": "/usr/bin/python",
+	"ruff.path": [
+		"/usr/local/bin/ruff"
+	],
+	"ruff.lint.args": [
+		"--config=${workspaceFolder}/pyproject.toml"
+	],
+	"ruff.format.args": [
+		"--config=${workspaceFolder}/pyproject.toml"
+	],
+	"mypy-type-checker.path": [
+		"/usr/loval/bin/mypy"
+	],
+	"mypy-type-checker.args": [
+		"--config=${workspaceFolder}/pyproject.toml"
+	]
+	// C++
+}
