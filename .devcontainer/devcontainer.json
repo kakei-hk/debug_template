@@ -27,9 +27,8 @@
 				"streetsidesoftware.code-spell-checker",
 				// python
 				"ms-python.python",
-				"ms-python.isort",
-				"ms-python.flake8",
-				"ms-python.black-formatter",
+				"charliermarsh.ruff",
+				"ms-python.mypy-type-checker",
 				"ms-toolsai.jupyter",
 				"njpwerner.autodocstring",
 				// C/C+++
@@ -47,12 +46,16 @@
 				"yzhang.markdown-all-in-one",
 				"yzane.markdown-pdf",
 				"shd101wyy.markdown-preview-enhanced",
-				"hediet.vscode-drawio",
-				"bierner.markdown-mermaid",
 				"davidanson.vscode-markdownlint",
+				// drawio
+				"hediet.vscode-drawio",
+				// mermaid
+				"bierner.markdown-mermaid",
 				// csv
 				"mechatroner.rainbow-csv",
 				"janisdd.vscode-edit-csv",
+				// toml
+				"tamasfe.even-better-toml",
 				// others
 				"vincent-templier.vscode-netron"
 			]

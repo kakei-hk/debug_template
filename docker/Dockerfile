@@ -34,9 +34,14 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     python3-pip \
     python-is-python3
 
+# install python module
+RUN pip install --upgrade pip
+COPY . ${WORKDIR}
+RUN pip install --no-cache-dir -e ${WORKDIR}[dev,test]
+
 # Modify authority
 RUN groupadd -g ${GID} ${GROUPNAME} \
     && useradd -m -s /bin/bash -u ${UID} -g ${GID} ${GROUPNAME}
-USER ${USERNAME}
 WORKDIR ${WORKDIR}
 RUN chown -R ${USERNAME}:${GROUPNAME} ${WORKDIR}
+USER ${USERNAME}

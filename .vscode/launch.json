@@ -8,6 +8,22 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true
+        },
+        {
+            "name": "Python: run example script",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "pydebug_template/example/example.py",
+            "args": [
+                "--matrix-size",
+                "8",
+                "--fix-seeds",
+                "--seeds",
+                "11",
+                "101"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
         }
     ]
 }

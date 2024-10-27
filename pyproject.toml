@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools >= 69.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydebug_template"
+version = "0.1.0"
+requires-python = ">=3.8"
+dependencies = [
+    "ruff >= 0.7",
+    "mypy >= 1.13"
+]
+
+[project.optional-dependencies]
+dev = [
+    "numpy >= 1.24",
+    "pre-commit"
+]
+test = ["pytest"]
+
+[tool.setuptools]
+py-modules = ["pydebug_template"]
+
+[tool.ruff]
+exclude = [
+    "__pycache__",
+    ".mypy_cache",
+    ".venv",
+    "venv",
+    ".git",
+    ".vscode",
+    ".devcontainer",
+]
+
+line-length = 88
+indent-width = 4
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "W",
+    "I",
+    "F",
+    "D",
+]
+ignore = [
+    "D100",
+    "D104",
+    "D417",
+]
+fixable = ["ALL"]
+unfixable = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.mypy]
+exclude = []
+warn_no_return = true
+warn_return_any = true
+warn_unused_ignores = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["pydebug_template.utils"]
+warn_return_any = false
