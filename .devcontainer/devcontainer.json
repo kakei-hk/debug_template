@@ -27,9 +27,8 @@
 				"streetsidesoftware.code-spell-checker",
 				// python
 				"ms-python.python",
-				"ms-python.isort",
-				"ms-python.flake8",
-				"ms-python.black-formatter",
+				"charliermarsh.ruff",
+				"ms-python.mypy-type-checker",
 				"ms-toolsai.jupyter",
 				"njpwerner.autodocstring",
 				// C/C+++
@@ -55,6 +54,8 @@
 				// csv
 				"mechatroner.rainbow-csv",
 				"janisdd.vscode-edit-csv",
+				// toml
+				"tamasfe.even-better-toml",
 				// others
 				"vincent-templier.vscode-netron"
 			]
