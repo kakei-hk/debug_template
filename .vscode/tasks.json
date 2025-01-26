@@ -1,0 +1,24 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "C/C++: g++ debug build current file",
+			"type": "cppbuild",
+			"command": "/usr/bin/g++",
+			"args": [
+				"${fileDirname}/${fileBasename}",
+				"-g",
+				"-O0",
+				"-o",
+				"${fileDirname}/build/${fileBasenameNoExtension}.out"
+			],
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
