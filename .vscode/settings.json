@@ -1,5 +1,4 @@
 {
-	// Python
 	"[python]": {
 		"editor.formatOnSave": true,
 		"editor.rulers": [
@@ -7,7 +6,6 @@
 		],
 		"editor.defaultFormatter": "charliermarsh.ruff",
 		"editor.codeActionsOnSave": {
-			// "source.fixAll.ruff": "explicit",
 			"source.fixAll": "explicit",
 			"source.organizeImports.ruff": "explicit"
 		}
@@ -27,6 +25,12 @@
 	],
 	"mypy-type-checker.args": [
 		"--config=${workspaceFolder}/pyproject.toml"
-	]
-	// C++
+	],
+	"[cpp]": {
+		"editor.formatOnSave": true,
+		"editor.rulers": [
+			120
+		],
+		"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+	}
 }

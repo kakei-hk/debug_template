@@ -23,7 +23,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     openssh-client \
     pkg-config \
     gdb \
-    clang-format \
+    clangd \
     cmake \
     ninja-build
 

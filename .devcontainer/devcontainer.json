@@ -3,7 +3,6 @@
 	"name": "debug_template",
 	"runArgs": [
 		"--shm-size=16g",
-		// "--gpu=all",
 		"--network=host"
 	],
 	"workspaceFolder": "/workspace",
@@ -17,7 +16,6 @@
 				"terminal.integrated.defaultProfile.linux": "tmux"
 			},
 			"extensions": [
-				// common
 				"oderwat.indent-rainbow",
 				"shardulm94.trailing-spaces",
 				"christian-kohler.path-intellisense",
@@ -25,38 +23,28 @@
 				"mosapride.zenkaku",
 				"vscode-icons-team.vscode-icons",
 				"streetsidesoftware.code-spell-checker",
-				// python
 				"ms-python.python",
 				"charliermarsh.ruff",
 				"ms-python.mypy-type-checker",
 				"ms-toolsai.jupyter",
 				"njpwerner.autodocstring",
-				// C/C+++
 				"ms-vscode.cpptools",
-				"xaver.clang-format",
+				"llvm-vs-code-extensions.vscode-clangd",
 				"jeff-hykin.better-cpp-syntax",
 				"ms-vscode.cmake-tools",
-				// git
 				"mhutchie.git-graph",
 				"donjayamanne.githistory",
 				"eamodio.gitlens",
-				// shell
 				"timonwong.shellcheck",
-				// markdown
 				"yzhang.markdown-all-in-one",
 				"yzane.markdown-pdf",
 				"shd101wyy.markdown-preview-enhanced",
 				"davidanson.vscode-markdownlint",
-				// drawio
 				"hediet.vscode-drawio",
-				// mermaid
 				"bierner.markdown-mermaid",
-				// csv
 				"mechatroner.rainbow-csv",
 				"janisdd.vscode-edit-csv",
-				// toml
 				"tamasfe.even-better-toml",
-				// others
 				"vincent-templier.vscode-netron"
 			]
 		}
