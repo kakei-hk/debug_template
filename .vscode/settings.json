@@ -32,5 +32,7 @@
 			120
 		],
 		"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
-	}
+	},
+	"cmake.sourceDirectory": "/workspace/cppdebug_template",
+	"cmake.useCMakePresets": "always"
 }

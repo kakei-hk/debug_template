@@ -26,7 +26,7 @@
             "justMyCode": true
         },
         {
-            "name": "C++: Current File",
+            "name": "C/C++: Current File",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/build/${fileBasenameNoExtension}.out",

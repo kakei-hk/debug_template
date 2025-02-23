@@ -18,7 +18,8 @@
 			"group": {
 				"kind": "build",
 				"isDefault": true
-			}
+			},
+			"detail": "Build current single C/C++ file with g++."
 		}
 	]
 }
