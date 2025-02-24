@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 ARG USERNAME="developer"
 ARG GROUPNAME="developer"
@@ -23,14 +23,21 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     openssh-client \
     pkg-config \
     gdb \
-    clang-format \
-    cmake \
+    clangd \
+    lsb-release \
+    software-properties-common \
+    gpg-agent \
     ninja-build
+
+# Specific version CMake
+RUN wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc | apt-key add - \
+    && apt-add-repository "deb https://apt.kitware.com/ubuntu/ $(lsb_release -cs) main" \
+    && apt-get update && apt-get install -y cmake-data=3.29.6-0kitware1ubuntu22.04.1 cmake=3.29.6-0kitware1ubuntu22.04.1
 
 # Python packages
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends \
-    python3.8 \
+    python3.10 \
     python3-pip \
     python-is-python3
 

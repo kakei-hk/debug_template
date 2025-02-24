@@ -24,6 +24,22 @@
             ],
             "console": "integratedTerminal",
             "justMyCode": true
+        },
+        {
+            "name": "C/C++: Current File",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/build/${fileBasenameNoExtension}.out",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "C/C++: debug cppdebug_template example",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/cppdebug_template/build/debug/src/example/example",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}"
         }
     ]
 }
