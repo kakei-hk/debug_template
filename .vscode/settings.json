@@ -33,6 +33,11 @@
 		],
 		"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
 	},
-	"cmake.sourceDirectory": "/workspace/cppdebug_template",
-	"cmake.useCMakePresets": "always"
+	"cmake.sourceDirectory": "${workspaceFolder}/cppdebug_template",
+	"cmake.useCMakePresets": "always",
+	"clangd.arguments": [
+		"--compile-commands-dir=${workspaceFolder}/cppdebug_template/build/debug"
+	],
+	"C_Cpp.intelliSenseEngine": "disabled",
+	"C_Cpp.autocomplete": "disabled"
 }
