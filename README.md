@@ -17,9 +17,9 @@ You can prepare Dev Container with the following steps.
 - Open command palette with `Ctrl + Shift + P` and select `Dev Containers: Rebuild and Reopen in Container` for the first build or container update.
   - If you want to just reopen Dev Container without rebuild or update, `Dev Containers: Reopen in Container` is available.
 
-### Debug examples with VScode Extensions
+### Debug Examples with VScode Extensions
 
-#### Python debug example
+#### Python Debug Example
 
 This project provides an example Python package, `pydebug_template`, to show how you can develop your Python project with devcontainer.
 
@@ -37,7 +37,7 @@ You can debug `pydebug_template/example/example.py` with the following steps.
 - Open `Debug and Run` with `Ctrl + Shift + D` and select `Python: run example script` (configuration name in `launch.json`).
 - Run debug with `F5`.
 
-#### C/C++ debug example
+#### C/C++ Debug Example
 
 `cppdebug_template` demonstrates how you can build and debug C/C++ program.
 
