@@ -1,9 +1,6 @@
 #!/bin/bash
 
-# install debug tools in devcontainer
-
-# tmux
-# TODO: add install commands without super user
+# additionally install tools in devcontainer here if you don't want to change base Docker image
 
 # atuin
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh

@@ -11,17 +11,14 @@
 		}
 	},
 	"python.defaultInterpreterPath": "/usr/bin/python",
+	"ruff.importStrategy": "fromEnvironment",
 	"ruff.path": [
 		"/usr/local/bin/ruff"
 	],
-	"ruff.lint.args": [
-		"--config=${workspaceFolder}/pyproject.toml"
-	],
-	"ruff.format.args": [
-		"--config=${workspaceFolder}/pyproject.toml"
-	],
+	"ruff.configuration": "pyproject.toml",
+	"mypy-type-checker.importStrategy": "fromEnvironment",
 	"mypy-type-checker.path": [
-		"/usr/loval/bin/mypy"
+		"/usr/local/bin/mypy"
 	],
 	"mypy-type-checker.args": [
 		"--config=${workspaceFolder}/pyproject.toml"
@@ -39,5 +36,8 @@
 		"--compile-commands-dir=${workspaceFolder}/cppdebug_template/build/debug"
 	],
 	"C_Cpp.intelliSenseEngine": "disabled",
-	"C_Cpp.autocomplete": "disabled"
+	"C_Cpp.autocomplete": "disabled",
+	"errorLens.exclude": [
+		": Unknown word."
+	]
 }
